@@ -1,0 +1,157 @@
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+    html,
+    body {
+        @apply w-full h-full font-notosans text-main-st bg-sub-st transition-all duration-500
+    }
+    /* pc layout */
+    
+    .logo {
+        @apply w-full h-full flex m-auto p-[20%]
+    }
+    
+    .logo img {
+        @apply w-[100%] h-[100%]
+    }
+    
+    nav a {
+        @apply transition-all duration-500 scale-100 text-shadow-sm
+    }
+    
+    nav a:hover {
+        @apply text-usuki transition-all duration-500 scale-105 text-shadow-md
+    }
+    /* nav top */
+    
+    nav.top {
+        @apply w-full h-full flex m-auto pr-[5%] transition-all duration-300 bg-[#ffff0030]
+    }
+    
+    nav.top ul {
+        @apply flex m-auto justify-evenly w-full
+    }
+    
+    nav.top a {
+        @apply flex flex-col m-auto justify-center items-center h-full
+    }
+    
+    nav.top a .title {
+        @apply text-lg tracking-widest relative
+    }
+    
+    nav .star-sign {
+        @apply text-torinoko flex justify-center items-center m-auto
+    }
+    
+    nav.top .star-sign {
+        @apply absolute -left-[1.5rem]
+    }
+    
+    nav.left .star-sign {
+        @apply absolute -ml-[1.5rem]
+    }
+    /* nav.top .deco-line {
+    @apply w-[130%] h-[1px] rounded-sm bg-transparent
+}
+
+nav.top .deco-line:hover,
+nav.top .deco-line:active {
+    @apply w-[130%] h-[1px] rounded-sm bg-main-rd my-1
+} */
+    
+    nav.top a .sub-title {
+        @apply text-xs text-main-nd
+    }
+    /* nav left */
+    
+    nav.left {
+        @apply shadow-md bg-[#ffffff50] h-full w-full flex flex-col m-auto pt-[10%] pb-[20%]
+    }
+    
+    nav.left ul {
+        @apply h-full w-full flex flex-col justify-around
+    }
+    
+    nav.left li {
+        @apply ml-[33%] transition-all duration-300
+    }
+    
+    nav.left a {
+        @apply flex flex-row m-auto h-full w-full transition-all duration-300 items-baseline
+    }
+    
+    nav.left a .title {
+        @apply text-lg tracking-widest mr-1
+    }
+    
+    nav.left a .sub-title {
+        @apply text-xs text-main-nd
+    }
+    /* main */
+    
+    main {
+        @apply bg-[#ff00ff30] h-full w-full overflow-hidden
+    }
+    
+    .item-list {
+        @apply overflow-y-hidden overflow-x-auto h-full snap-x snap-mandatory scroll-smooth flex flex-row m-auto justify-start items-center flex-nowrap relative
+    }
+    
+    .item {
+        @apply snap-center w-[50%] flex m-auto justify-center items-center flex-grow-0 flex-shrink-0 relative
+    }
+    
+    .menu-top .item:nth-child(1) {
+        @apply ml-[8%]
+    }
+    
+    .menu-left .item:nth-child(1) {
+        @apply ml-[25%]
+    }
+    
+    .item .wrap {
+        @apply w-[50%] m-auto justify-center items-center relative
+    }
+    
+    .item .image {
+        @apply w-[80%] flex m-auto justify-center items-center shadow-2xl
+    }
+    
+    .item .deco-text {
+        @apply w-full h-full flex m-auto text-white absolute
+    }
+    
+    .item .deco-text.top {
+        @apply flex-col items-end justify-start absolute top-0 place-content-end -top-[7%] h-full text-shadow-xl text-right
+    }
+    
+    .item .deco-text.bottom {
+        @apply flex flex-row bottom-0 items-end text-shadow-xl
+    }
+    
+    .item .deco-text.bottom .container {
+        @apply absolute flex flex-row items-center mb-[20%] -left-[17%] w-[50%]
+    }
+    
+    .item .deco-text.bottom .summarize {
+        @apply text-lg font-medium
+    }
+    
+    .item .deco-text .line {
+        @apply h-[1px] w-[30%] bg-white mr-1
+    }
+    
+    .item .deco-text.bottom .square {
+        @apply absolute flex flex-row items-start mb-[15%] -left-[23%] border border-[1px] border-white p-[5%] w-[9vw] h-[9vw] overflow-y-auto text-justify
+    }
+    
+    .item .deco-text.bottom .square-bg {
+        @apply bg-opacity-20 bg-white shadow-xl backdrop-blur-sm
+    }
+    
+    @media only screen and (min-width: 768px) {}
+    
+    @media only screen and (min-width: 1024px) {}
+    
+    @media only screen and (min-width: 1280px) {}

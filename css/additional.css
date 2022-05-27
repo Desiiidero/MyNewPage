@@ -1,0 +1,75 @@
+body {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    margin: auto;
+}
+
+.square::-webkit-scrollbar {
+    display: none;
+}
+
+.square {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.logo {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+nav.top {
+    grid-column-start: 4;
+    grid-column-end: 13;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+nav.left {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 13;
+}
+
+.menu-top main {
+    grid-column-start: 4;
+    grid-column-end: 13;
+    grid-row-start: 2;
+    grid-row-end: 13;
+}
+
+.menu-left main {
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 2;
+    grid-row-end: 13;
+}
+
+nav .star-sign {
+    animation: star-sign 10s infinite linear;
+}
+
+@keyframes star-sign {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    50% {
+        transform: rotate(730deg) scale(1.5);
+    }
+    100% {
+        transform: rotate(1460deg) scale(1);
+    }
+}
+
+
+/* layout squeeze keyframe */
+
+@media only screen and (min-width: 768px) {}
+
+@media only screen and (min-width: 1024px) {}
+
+@media only screen and (min-width: 1280px) {}
