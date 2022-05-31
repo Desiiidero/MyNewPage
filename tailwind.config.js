@@ -1,5 +1,6 @@
 module.exports = {
-    content: ["*.{html,js}"],
+    //purge: ['./dist/*.html'],
+    content: ["./src/*.{html,js}"],
     theme: {
         fontFamily: {
             'notosans': ['Source Sans Pro', 'Noto Sans TC', 'sans-serif'],
