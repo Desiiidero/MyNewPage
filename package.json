@@ -6,7 +6,9 @@
   "scripts": {
     "test": "npm run build-css && npx webpack serve --open",
     "build-css": "npx tailwindcss build -i src/css/styles.css -o src/css/output.css",
-    "build": "npm run build-css && npx webpack"
+    "build": "npm run build-css && npx webpack",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -18,10 +20,11 @@
   "bugs": {
     "url": "https://github.com/Desiiidero/MyNewPage/issues"
   },
-  "homepage": "https://github.com/Desiiidero/MyNewPage#readme",
+  "homepage": "https://desiiidero.github.io/MyNewPage",
   "devDependencies": {
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.7.1",
+    "gh-pages": "^4.0.0",
     "html-webpack-plugin": "^5.5.0",
     "style-loader": "^3.3.1",
     "tailwindcss": "^3.0.24",
