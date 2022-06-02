@@ -22,6 +22,7 @@ body {
 }
 
 nav.top {
+    transform: translateY(-100%);
     grid-column-start: 4;
     grid-column-end: 13;
     grid-row-start: 1;
@@ -29,20 +30,21 @@ nav.top {
 }
 
 nav.left {
+    transform: translateX(-100%);
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 13;
 }
 
-.menu-top main {
+.menu-left main {
     grid-column-start: 4;
     grid-column-end: 13;
     grid-row-start: 2;
     grid-row-end: 13;
 }
 
-.menu-left main {
+.menu-top main {
     grid-column-start: 1;
     grid-column-end: 13;
     grid-row-start: 2;
